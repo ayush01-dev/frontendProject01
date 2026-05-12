@@ -1,0 +1,64 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    background-color: #111;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-weight: 100;
+    padding: 10px 30px;
+    font-family: monospace;
+}
+
+
+.nav1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    
+}
+
+
+
+.nav1 img{
+    height: 60px;
+    
+}
+
+
+
+
+
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+
+.nav2 img{
+    height: 35px;
+    border-radius: 50%;
+}
+
