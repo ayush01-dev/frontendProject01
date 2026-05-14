@@ -1,3 +1,11 @@
+:root{
+--gray: #212121;
+--green: #009660;
+--white: #e9e9e9;
+--black:#0c0c0c;
+}
+
+
 @font-face {
     font-family: neu;
     src: url(./NeueMachina-Regular.woff2);
@@ -23,17 +31,19 @@ html,body{
 
 
 body{
-    background-color: #111;
+    background-color: var(--black);
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:white;
+    color:var(--white);
     font-weight: 1000;
     padding: 10px 30px;
     font-family: neu;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -113,3 +123,45 @@ nav{
     }
 
 }
+
+main{
+    padding-top: 100px;
+    
+}
+
+
+.section1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--white);
+    padding: 10px 30px;
+    font-family: Hel;
+}
+
+
+.section1 .left{
+    /* background-color: lightcoral; */
+    width: 45%;
+
+
+
+}
+
+.section1 .left .tags{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+
+  
+
+}
+
+.section1 .left .tags h4{
+    background-color: var(--gray);
+    padding: 10px 20px;
+    border-radius: 4px;
+    white-space:nowrap;
+}
+
