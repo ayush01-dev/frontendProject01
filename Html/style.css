@@ -3,6 +3,13 @@
     src: url(./NeueMachina-Regular.woff2);
 }
 
+
+@font-face {
+    font-family: Hel;
+    src: url(./Helvetica.ttf);
+}
+
+
 *{
     margin:0;
     padding: 0;
@@ -24,9 +31,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     color:white;
-    font-weight: 100;
+    font-weight: 1000;
     padding: 10px 30px;
-    font-family: monospace;
+    font-family: neu;
 }
 
 
@@ -34,6 +41,8 @@ nav{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 12px;
+    line-height: 1.5;
     
     
 }
@@ -53,12 +62,54 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 25px;
+    gap: 30px;
+    font-size: 12px;
 }
 
 
 .nav2 img{
-    height: 35px;
+    height: 30px;
     border-radius: 50%;
 }
 
+.nav2 h4 i {
+    font-size: 100px;
+}
+
+
+.nav3{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 12px;
+}
+
+
+.nav3 img{
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media(max-width: 600px){
+    nav{
+       padding: 8px 15px; 
+    }
+
+    .nav1 img{
+    height: 40px;
+    }
+
+    .nav1 h4{
+        font-size: 8px;
+    }
+
+    .nav2{
+        display: none;
+    }
+
+    .nav3{
+        display: flex;
+    }
+
+}
